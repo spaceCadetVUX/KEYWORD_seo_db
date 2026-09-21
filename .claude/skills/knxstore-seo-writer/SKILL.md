@@ -25,7 +25,7 @@ Cả seo-11 và seo-12 đều giả định đã có sẵn 3 thứ này (xem blo
 
 Làm theo file seo-11 hoặc seo-12 (đã đọc ở Bước 0) cho phần cấu trúc chi tiết, độ dài từng phần, và nguyên tắc viết câu. Vài điểm hay bị bỏ sót cần nhớ kỹ:
 
-- **Heading**: chỉ 1 H1, không nhảy cấp H1→H3, heading là câu truy vấn giả lập (viết gần cách người dùng thật gõ trên Google hoặc hỏi AI), không dùng heading chỉ để đổi cỡ chữ cho phần không phải nội dung chính.
+- **Heading**: chỉ 1 H1, không nhảy cấp H1→H3, heading là câu truy vấn giả lập (viết gần cách người dùng thật gõ trên Google hoặc hỏi AI), không dùng heading chỉ để đổi cỡ chữ cho phần không phải nội dung chính. Không dùng heading kiểu nhãn nội bộ/giáo trình như "Định nghĩa sản phẩm", "Giới thiệu", "Tổng quan", và không đánh số kiểu "Block 1", "Phần 2": khách đọc không tìm những cụm này, heading phải nêu đúng nội dung cụ thể bên dưới (VD "Tính năng nổi bật", "Khả năng tương thích").
 - **Answer-first**: mỗi H2/H3 dạng câu hỏi phải có câu trả lời trực tiếp 40–60 từ ngay bên dưới, trước khi mở rộng. Đây là yếu tố có tác động thật đến việc được trích dẫn trong AI Overviews/ChatGPT/Perplexity, không phải tùy chọn.
 - **FAQ cuối bài** (blog) hoặc **FAQ trong trang sản phẩm**: chọn 3–5 câu hỏi từ nhu cầu thật (không bịa câu hỏi để lấp chỗ trống), mỗi cặp hỏi-đáp là 1 khối tự chứa 60–180 từ hiểu được dù bị trích tách riêng. Chi tiết cách chọn câu hỏi và cân nhắc schema: xem mục "Cách viết FAQ cuối bài" trong seo-12.
 - **Đọc dễ**: câu dưới 20 từ, đoạn 1–2 câu, kim tự tháp ngược, plain language kể cả với độc giả chuyên môn (giữ đúng thuật ngữ ngành nhưng câu văn xung quanh vẫn rõ ràng).
