@@ -9,6 +9,8 @@ source: Nielsen Norman Group, Baymard Institute, Shopify, MarTech, CXL, Copyblog
 ← [Về chỉ mục](./seo-00-index.md) · Liên quan: [seo-02-onpage-content](./seo-02-onpage-content.md), [seo-06-keyword-research](./seo-06-keyword-research.md), [seo-08-schema-structured-data](./seo-08-schema-structured-data.md)
 
 > **Đầu vào cần có trước khi dùng file này**: (1) từ khóa chính đã xác thực nhu cầu tìm kiếm thật ([seo-06](./seo-06-keyword-research.md)), (2) dữ liệu sản phẩm thật (thông số, tương thích, giá, hình ảnh) từ nhà cung cấp hoặc `data_base/`, (3) giọng thương hiệu đã chọn (`knx-brand-voice-b2b` hoặc `knx-brand-voice-b2c`). File này chỉ hướng dẫn cách viết, không thay thế bước nghiên cứu từ khóa hay thu thập dữ liệu sản phẩm. Nếu dữ liệu đầu vào thiếu 1 trường (VD: không có thông tin bảo hành hoặc case study thật), không tự suy diễn hay bịa số liệu: bỏ qua phần đó hoặc đánh dấu rõ để người kiểm duyệt bổ sung trước khi publish.
+>
+> **Nếu đang cải thiện 1 trang sản phẩm đã publish sẵn**: đọc toàn bộ nội dung trang hiện tại trước khi viết lại (dùng WebFetch nếu có URL), không chỉ dựa vào 1 file research nội bộ có phạm vi hẹp hơn trang thật (VD: file research chỉ tập trung 1 hãng/1 dòng sản phẩm trong khi trang gốc đã liệt kê tương thích nhiều hãng hơn). Giữ lại mọi bảng, mọi dòng dữ liệu đã có trên trang gốc trừ khi có lý do rõ ràng để bỏ (sai thông tin, đã lỗi thời), không rút gọn chỉ vì muốn bài "gọn" hơn.
 
 ## 1. Vì sao mô tả sản phẩm quan trọng hơn nhiều người nghĩ
 
@@ -45,6 +47,7 @@ Theo tổng hợp Shopify/BigCommerce cho SEO 2026, cấu trúc hiệu quả g�
 ```
 
 - **Độ dài khuyến nghị**: 250–500 từ, đủ để công cụ tìm kiếm hiểu ngữ cảnh và vẫn dễ đọc cho khách hàng. Với sản phẩm kỹ thuật B2B (VD: gateway KNX), có thể dài hơn nếu nội dung bổ sung là thông số kỹ thuật thực chất, không phải nhồi chữ.
+- **Con số 250–500 từ chỉ tính phần văn xuôi** (đoạn mở, mô tả tính năng, hướng dẫn lắp đặt), không tính bảng thông số, bảng tương thích hay FAQ. Bảng phải đầy đủ mọi dòng dữ liệu thật đang có, không cắt bớt để vừa word count: sản phẩm có bảng tương thích nhiều hãng/nhiều biến thể (VD: 1 nền tảng phần cứng dùng được cho 15+ hãng máy lạnh khác nhau) phải liệt kê đủ, thiếu 1 hãng là khách hàng dùng hãng đó rời trang ngay.
 - **Trả lời đúng câu hỏi khách thật sự hỏi**: kiểm tra Reddit, mục hỏi-đáp trên sàn TMĐT, phần review của sản phẩm tương tự, thay vì đoán.
 
 ## 4. Heading H1/H2/H3 cho trang sản phẩm: chuẩn SEO, đúng intent
@@ -125,6 +128,7 @@ Chi tiết về mục tiêu điểm dễ đọc (Flesch Reading Ease) và nguyê
 - [ ] Nêu rõ khả năng tương thích/biến thể ngay trong mô tả, không chỉ trong bảng lọc (chống lại tỷ lệ 67% bỏ lỡ do biến thể không rõ ở Baymard)
 - [ ] Với sản phẩm kỹ thuật (KNX/Modbus/Matter): có phần "yêu cầu trước khi lắp" (VD: cần cổng P1/P2 sẵn có, hoặc cần mua kèm bo giao tiếp), đúng tinh thần trung thực, tránh khách mua nhầm
 - [ ] **Không có ký tự em dash (—) ở bất kỳ đâu trong bài**, kể cả trong heading và bảng thông số (mục 6)
+- [ ] Nếu đang cải thiện trang có sẵn: đã đọc toàn bộ trang gốc (không chỉ research file phạm vi hẹp hơn), bảng thông số/tương thích giữ đủ mọi dòng dữ liệu thật, không bị rút gọn
 
 ## 8. Về việc dùng AI để viết mô tả sản phẩm
 

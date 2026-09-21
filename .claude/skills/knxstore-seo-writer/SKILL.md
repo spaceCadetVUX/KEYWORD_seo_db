@@ -18,7 +18,7 @@ Skill này viết bản nháp hoàn chỉnh (mô tả sản phẩm hoặc bài b
 Cả seo-11 và seo-12 đều giả định đã có sẵn 3 thứ này (xem block "Đầu vào cần có" ở đầu mỗi file). Đừng viết khi thiếu, vì thiếu 1 trong 3 thứ này là nguyên nhân phổ biến nhất khiến bản nháp phải viết lại:
 
 1. **Từ khóa chính đã xác thực nhu cầu tìm kiếm thật.** Nếu người dùng chưa cho từ khóa, đọc `knowledges/seo-06-keyword-research.md` để tự đề xuất, hoặc hỏi lại.
-2. **Dữ liệu sản phẩm/sự kiện thật** (thông số, tương thích, giá, case study, số dự án...). Không suy diễn hay bịa số liệu để lấp chỗ trống. Nếu 1 trường dữ liệu bị thiếu, đánh dấu ngay tại vị trí đó trong bản nháp bằng `[CẦN BỔ SUNG: <mô tả cái còn thiếu>]` thay vì tự nghĩ ra thông số, và nói rõ với người dùng những chỗ đã đánh dấu khi giao bản nháp.
+2. **Dữ liệu sản phẩm/sự kiện thật** (thông số, tương thích, giá, case study, số dự án...). Không suy diễn hay bịa số liệu để lấp chỗ trống. Nếu 1 trường dữ liệu bị thiếu, đánh dấu ngay tại vị trí đó trong bản nháp bằng `[CẦN BỔ SUNG: <mô tả cái còn thiếu>]` thay vì tự nghĩ ra thông số, và nói rõ với người dùng những chỗ đã đánh dấu khi giao bản nháp. **Nếu đang cải thiện 1 trang đã publish sẵn và có URL, đọc toàn bộ trang đó bằng WebFetch trước khi viết**, đừng chỉ dựa vào 1 file research nội bộ có phạm vi hẹp hơn trang thật (VD: file research chỉ tập trung 1 hãng trong khi trang gốc đã có bảng tương thích nhiều hãng hơn). Giữ lại mọi bảng, mọi dòng dữ liệu đã có trên trang gốc, không tự rút gọn.
 3. **Giọng thương hiệu**: B2B (KNX/DALI-2/BACnet/Casambi/Modbus, đối tượng SI/ME Contractor) hay B2C (Matter Smarthome, đối tượng chủ nhà). Suy ra từ loại sản phẩm/chủ đề nếu người dùng không nói rõ. Nếu có thể invoke được skill `knx-brand-voice-b2b` hoặc `knx-brand-voice-b2c` ở cấp tổ chức thì dùng để tinh chỉnh giọng văn; nếu không, ít nhất tuân theo phần phân biệt B2B/B2C đã ghi trong seo-11 mục 9 và seo-12 mục "Áp dụng cho KNXStore".
 
 ## Bước 2: Viết theo đúng cấu trúc của quy trình đã chọn
@@ -38,7 +38,7 @@ Trước khi đưa bản nháp cho người dùng, chủ động rà lại toàn
 
 ## Bước 3: Lưu file .md chỉ chứa đúng nội dung sẽ dán vào bài
 
-File lưu ra phải là bản sẵn sàng dùng ngay: mở file ra là copy nguyên xi dán vào ô nội dung bài viết/trang sản phẩm trên CMS, không cần cắt gọt gì thêm. Vì vậy file **không chứa frontmatter YAML, không chứa ghi chú nội bộ, không chứa nhãn quy trình (như "BLOCK 1", "Bước 2"...) xen vào giữa** — chỉ có đúng phần nội dung, bắt đầu ngay từ H1:
+File lưu ra phải là bản sẵn sàng dùng ngay: mở file ra là copy nguyên xi dán vào ô nội dung bài viết/trang sản phẩm trên CMS, không cần cắt gọt gì thêm. Vì vậy file **không chứa frontmatter YAML, không chứa ghi chú nội bộ, không chứa nhãn quy trình (như "BLOCK 1", "Bước 2"...) xen vào giữa**, chỉ có đúng phần nội dung, bắt đầu ngay từ H1:
 
 ```markdown
 # [H1]
@@ -51,7 +51,7 @@ File lưu ra phải là bản sẵn sàng dùng ngay: mở file ra là copy nguy
 
 Nếu 1 chỗ dữ liệu bị thiếu và đã đánh dấu `[CẦN BỔ SUNG: ...]` theo Bước 1, giữ nguyên đánh dấu đó ngay trong file (người biên tập cần thấy khi đọc bài trước khi publish), không xóa đi để file trông "sạch" hơn.
 
-**Title tag, Meta description, từ khóa chính, và gợi ý schema KHÔNG đưa vào file này** — chúng thuộc các field SEO riêng của CMS, dán nhầm vào ô nội dung sẽ hiện sai trên trang. Báo các thông tin đó ngay trong câu trả lời ở chat, ngay sau khi lưu file xong, theo mẫu:
+**Title tag, Meta description, từ khóa chính, và gợi ý schema KHÔNG đưa vào file này**, chúng thuộc các field SEO riêng của CMS, dán nhầm vào ô nội dung sẽ hiện sai trên trang. Báo các thông tin đó ngay trong câu trả lời ở chat, ngay sau khi lưu file xong, theo mẫu:
 
 ```
 Đã lưu: output/<tên-file>.md
@@ -80,6 +80,7 @@ Trước khi báo hoàn thành, đối chiếu bản nháp vừa lưu với chec
 - [ ] Giọng văn khớp B2B hoặc B2C đã xác định ở Bước 1
 - [ ] Đã lưu đúng file trong `output/`, không ghi đè bản cũ mà chưa hỏi
 - [ ] File chỉ chứa nội dung bài (từ H1 trở xuống), không có frontmatter YAML, không có ghi chú nội bộ hay nhãn quy trình lẫn vào giữa
+- [ ] Nếu đang cải thiện trang có sẵn: đã đọc toàn bộ trang gốc (không chỉ research file phạm vi hẹp), mọi bảng thông số/tương thích giữ đủ số dòng như trang gốc, không bị rút gọn
 
 Nếu có mục nào không đạt, sửa file rồi lưu lại trước khi báo xong. Sau khi mọi mục đạt, trả lời ngắn gọn trong chat theo đúng mẫu ở Bước 3 (đường dẫn file, Title tag, Meta description, schema gợi ý), không cần dán lại toàn bộ nội dung bài viết vì đã có trong file.
 
