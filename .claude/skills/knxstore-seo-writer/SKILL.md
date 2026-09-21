@@ -36,13 +36,20 @@ Làm theo file seo-11 hoặc seo-12 (đã đọc ở Bước 0) cho phần cấu
 
 Trước khi đưa bản nháp cho người dùng, chủ động rà lại toàn bộ text vừa viết xem còn ký tự "—" nào sót không (có thể lướt qua bằng mắt hoặc tìm kiếm ký tự này trong bản nháp), coi đây là bước bắt buộc giống như đọc lại chính tả.
 
-## Bước 3: Đóng gói bản nháp theo đúng format này
+## Bước 3: Lưu bản nháp thành file .md trong output/
 
-Luôn trả bản nháp theo khung sau, kể cả khi vài phần được đánh dấu là cần bổ sung:
+Đầu ra của skill này là 1 file thật, không phải chỉ trả text trong chat. Đóng gói bản nháp theo khung sau (frontmatter + nội dung), rồi dùng Write để lưu vào thư mục `output/` của repo:
 
-```
-**Title tag đề xuất** (~50-60 ký tự): ...
-**Meta description đề xuất** (~150-160 ký tự): ...
+```markdown
+---
+title: "[Title tag đề xuất, ~50-60 ký tự]"
+meta_description: "[Meta description đề xuất, ~150-160 ký tự]"
+target_keyword: "[từ khóa chính]"
+content_type: san-pham | blog
+schema_suggested: [Product / FAQPage / Product, FAQPage]
+status: draft
+created: [ngày hôm nay, định dạng YYYY-MM-DD]
+---
 
 # [H1]
 
@@ -50,14 +57,17 @@ Luôn trả bản nháp theo khung sau, kể cả khi vài phần được đán
 
 ## Câu hỏi thường gặp
 [3-5 cặp H3 hỏi-đáp]
-
----
-**Schema gợi ý**: [Product / FAQPage / cả hai] — ghi chú ngắn các trường cần điền, không cần viết JSON-LD đầy đủ trừ khi người dùng yêu cầu.
 ```
+
+**Đặt tên file:**
+- Mô tả sản phẩm: `output/<sku-viết-thường>.md`, VD SKU `81MTAC01-DAI` → `output/81mtac01-dai.md`. Nếu không có SKU, dùng slug từ tên sản phẩm.
+- Bài blog: `output/<slug-từ-H1>.md`, slug viết thường, bỏ dấu, nối bằng gạch nối, VD H1 "KNX vs DALI-2 cho chiếu sáng thương mại" → `output/knx-vs-dali-2-chieu-sang-thuong-mai.md`.
+
+**Nếu file trùng tên đã tồn tại trong output/**: đọc file cũ trước, hỏi người dùng muốn ghi đè hay lưu bản mới với hậu tố `-v2`, `-v3`... Không tự ý ghi đè, vì file cũ có thể đang được người khác chỉnh sửa.
 
 ## Bước 4: Tự kiểm tra trước khi coi là xong
 
-Trước khi trả kết quả, đối chiếu bản nháp với checklist gốc trong file đã dùng (mục "Checklist" ở seo-11 hoặc "Checklist nhanh trước khi publish" ở seo-12), đặc biệt các mục dễ sót:
+Trước khi báo hoàn thành, đối chiếu bản nháp vừa lưu với checklist gốc trong file đã dùng (mục "Checklist" ở seo-11 hoặc "Checklist nhanh trước khi publish" ở seo-12), đặc biệt các mục dễ sót:
 
 - [ ] Không còn ký tự em dash (—) ở bất kỳ đâu
 - [ ] Chỉ 1 H1, không nhảy cấp heading
@@ -65,8 +75,9 @@ Trước khi trả kết quả, đối chiếu bản nháp với checklist gốc
 - [ ] FAQ 3–5 câu, câu hỏi từ nhu cầu thật, không trùng nội dung đã có ở H2 phía trên
 - [ ] Không có số liệu/case study bị bịa để lấp chỗ dữ liệu thiếu, những chỗ thiếu đã được đánh dấu rõ
 - [ ] Giọng văn khớp B2B hoặc B2C đã xác định ở Bước 1
+- [ ] Đã lưu đúng file trong `output/`, không ghi đè bản cũ mà chưa hỏi
 
-Nếu có mục nào không đạt, sửa lại trước khi giao, đừng giao bản nháp rồi nói người dùng tự kiểm tra thay.
+Nếu có mục nào không đạt, sửa file rồi lưu lại trước khi báo xong. Sau khi mọi mục đạt, trả lời ngắn gọn trong chat: đường dẫn file vừa lưu và tóm tắt các chỗ đã đánh dấu `[CẦN BỔ SUNG]` nếu có, không cần dán lại toàn bộ nội dung bài viết vì đã có trong file.
 
 ## Tài liệu tham chiếu
 
