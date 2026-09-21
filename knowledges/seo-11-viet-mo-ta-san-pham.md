@@ -86,6 +86,13 @@ Mỗi H2 nên ngắn gọn, đủ để người đọc quét hiểu ngay nội 
 | Ghép cặp **lợi ích – tính năng** trong bullet, không liệt kê tính năng trơ | MarTech "12-part recipe" | "Kết nối trực tiếp qua cổng P1/P2 có sẵn **→ không cần đục tường, đi dây lại**" |
 | Nói nó là gì + nói khách nhận được gì (2 câu đầu) | CXL (nghiên cứu 500 headline) | Câu 1: sản phẩm là gì. Câu 2: giá trị cụ thể khách nhận được |
 | Biến lợi ích chính thành tiêu đề/câu mở, không chôn giữa bài | Copyblogger | Tên sản phẩm + lợi ích cốt lõi ngay trong H1/dòng mở đầu |
+| Câu ngắn, đoạn ngắn | NN/g eye-tracking | Câu dưới 20 từ; người đọc web chỉ tiêu hóa khoảng 20% số từ trên 1 trang, đọc theo mẫu hình chữ F (mục 2) |
+| Plain language, kể cả với khách chuyên môn | NN/g "Plain Language Is for Everyone, Even Experts" | Giữ đúng thuật ngữ ngành (KNX TP, DALI-2, BACnet...) nhưng câu văn xung quanh vẫn rõ ràng, không vòng vo; kỹ sư/SI cũng muốn thông tin ngắn gọn dễ quét, không phải văn phong càng phức tạp càng uy tín |
+| Mỗi đoạn là 1 khối tự chứa (Self-Contained Content Unit) 60–180 từ | Nghiên cứu GEO 2026 | Đoạn mô tả tính năng phải hiểu được dù bị AI trích tách riêng khỏi bài, không phụ thuộc câu trước/sau |
+
+Chi tiết về mục tiêu điểm dễ đọc (Flesch Reading Ease) và nguyên tắc kim tự tháp ngược, xem [seo-12 Bước 5](./seo-12-viet-bai-blog-chuan-seo-geo.md).
+
+**FAQ trong trang sản phẩm (H2 "Câu hỏi thường gặp" ở mục 4)**: chỉ chọn 3–5 câu hỏi liên quan trực tiếp đến quyết định mua (tương thích, bảo hành, yêu cầu lắp đặt, chính sách đổi trả), không phải câu hỏi mang tính giáo dục chung chung (để dành cho bài blog). Mỗi câu trả lời answer-first 40–60 từ. Cách chọn câu hỏi, viết câu trả lời, và cân nhắc schema, xem hướng dẫn đầy đủ ở [seo-12 mục Cách viết FAQ cuối bài](./seo-12-viet-bai-blog-chuan-seo-geo.md).
 
 ## 6. Quy tắc định dạng bắt buộc: không dùng em dash (—)
 
@@ -144,3 +151,5 @@ Theo khuyến nghị ngành 2026 (tổng hợp qua Shopify/BigCommerce guide): *
 - ConvertMate GEO Benchmark Study 2026: số liệu heading hierarchy và xác suất trích dẫn AI (nguồn thứ cấp, tham khảo xu hướng)
 - [No, an Em Dash Can't Help You Detect AI Text – How-To Geek](https://www.howtogeek.com/no-an-em-dash-cant-help-you-detect-ai-text/)
 - [Em Dashes, Hyphens and Spotting AI Writing – Plagiarism Today](https://www.plagiarismtoday.com/2025/06/26/em-dashes-hyphens-and-spotting-ai-writing/)
+- [Plain Language Is for Everyone, Even Experts – Nielsen Norman Group](https://www.nngroup.com/articles/plain-language-experts/)
+- Readability và tỷ lệ chuyển đổi (Flesch Reading Ease, Self-Contained Content Units): tổng hợp ngành 2026 qua Compose.ly, Wellows (nguồn thứ cấp, tham khảo xu hướng)

@@ -56,11 +56,18 @@ Không viết mò. Cách xác thực:
 
 | Nguyên tắc | Chi tiết |
 |---|---|
-| Đoạn văn ngắn | 1–2 câu/đoạn, tránh "tường chữ" |
+| Đoạn văn ngắn | 1–2 câu/đoạn, tránh "tường chữ". Nghiên cứu eye-tracking của NN/g: người đọc web chỉ tiêu hóa khoảng 20% số từ trên 1 trang, đọc theo mẫu hình chữ F |
+| Câu ngắn | Ưu tiên câu dưới 20 từ; câu dài quá 25 từ nên tách thành 2 câu |
 | Chia nhỏ bằng H2/H3 | Mỗi heading = 1 câu hỏi/subtopic rõ ràng |
 | Giọng chủ động | "Bạn cấu hình..." thay vì "Việc cấu hình được thực hiện..." |
+| Kim tự tháp ngược | Thông tin quan trọng nhất lên đầu đoạn/section, chi tiết bổ sung xuống dưới; không bắt người đọc chờ đến cuối mới ra kết luận |
+| Plain language, kể cả với độc giả chuyên môn | NN/g "Plain Language Is for Everyone, Even Experts": kỹ sư/chuyên gia cũng muốn thông tin ngắn gọn, dễ quét, không phải văn phong càng phức tạp càng uy tín. Với bài B2B kỹ thuật: giữ đúng thuật ngữ ngành (KNX TP, DALI-2, BACnet...) nhưng câu văn xung quanh vẫn phải rõ ràng, không vòng vo |
 | Chứng cứ thật, không chung chung | Số liệu cụ thể, case study, ảnh chụp thực tế. **"Nội dung mà AI có thể tự viết ra = chưa đủ tốt"** (Backlinko) |
 | Multimedia | Ảnh, sơ đồ đấu nối, screenshot thực tế minh họa |
+
+**Đơn vị nội dung tự chứa (Self-Contained Content Unit, SCU)**: mỗi đoạn hoặc section nên là 1 khối 60–180 từ trả lời trọn vẹn 1 ý, hiểu được ngay cả khi bị AI trích tách riêng khỏi bài, không phụ thuộc câu trước/sau. Đây là điều kiện để cả featured snippet lẫn AI answer engine trích dẫn sạch, khớp nguyên tắc "chunk 2–3 câu" đã nêu ở phần GEO trong Bước 7.
+
+**Mục tiêu điểm dễ đọc**: nội dung tiếng Anh đạt khoảng 60–70 điểm Flesch Reading Ease (tương đương trình độ đọc lớp 8-9) tương quan với tỷ lệ chuyển đổi cao hơn khoảng 30% theo dữ liệu ngành 2026. Tiếng Việt chưa có thang đo tương đương chính thức, nhưng nguyên tắc áp dụng được: câu ngắn, từ phổ thông, hạn chế mệnh đề lồng nhau nhiều tầng.
 
 ## Bước 6: Viết kết luận
 
@@ -139,6 +146,29 @@ Bài blog phục vụ nhiều loại intent hơn trang sản phẩm (information
 
 Cấu trúc heading này áp dụng như nhau cho mọi giao thức KNXStore đang phân phối (KNX, DALI-2, Casambi, BACnet, Modbus, Matter), chỉ thay đổi nội dung kỹ thuật cụ thể theo từng dòng sản phẩm.
 
+## Cách viết FAQ cuối bài: chọn câu hỏi, viết câu trả lời, cân nhắc schema
+
+FAQ cuối bài là 1 trong những định dạng được AI Overviews, ChatGPT và Perplexity trích dẫn nhiều nhất theo nghiên cứu ngành 2026, vì mỗi cặp hỏi-đáp đã sẵn ở dạng khối tự chứa mà AI answer engine ưu tiên trích xuất. Viết đúng cách khai thác được cả 2 mục tiêu: featured snippet trên Google truyền thống và trích dẫn AI.
+
+**Chọn câu hỏi: lấy từ nhu cầu thật, không bịa**
+- Nguồn ưu tiên theo thứ tự: (1) câu hỏi khách hàng thực tế hỏi Sales/CS (Huy/Vũ), (2) mục "Mọi người cũng hỏi" và tìm kiếm liên quan trên Google cho từ khóa mục tiêu, (3) câu hỏi lặp lại trên Reddit/forum ngành, (4) xác thực lại nhu cầu tìm kiếm bằng keyword research (Ahrefs/Semrush).
+- Chỉ chọn 3–5 câu hỏi. Mỗi câu phải khác biệt với nội dung đã trả lời trong thân bài, không lặp lại y hệt 1 H2 đã có ở trên dưới dạng câu hỏi khác.
+- Viết câu hỏi đúng cách người dùng thực sự gõ trên Google hoặc hỏi AI, giữ văn phong hội thoại tự nhiên, tránh diễn đạt kiểu editorial.
+
+**Viết câu trả lời: answer-first, tự chứa, ngắn**
+- Câu trả lời trực tiếp trong 40–60 từ ngay đầu, trước khi mở rộng thêm nếu cần.
+- Mỗi cặp hỏi-đáp là 1 khối tự chứa (SCU) 60–180 từ, hiểu được khi bị trích tách riêng khỏi bài, không phụ thuộc câu trước/sau (nguyên tắc SCU ở Bước 5).
+- Dùng H3 cho mỗi câu hỏi, đặt dưới H2 "Câu hỏi thường gặp": heading giúp AI answer engine phân đoạn rõ hơn so với chỉ in đậm trong đoạn văn thường.
+- Trung lập, cụ thể, có thể kiểm chứng: tránh trả lời chung chung kiểu "còn tùy trường hợp" mà không nêu điều kiện cụ thể đi kèm.
+
+**Có nên dùng FAQPage schema?**
+Dữ liệu ngành 2026 không đồng nhất, cần nói rõ để tránh đoán mò: Google đã bỏ FAQ rich result trên SERP từ 2023 nên schema không còn tạo rich snippet trực tiếp, và một số phân tích 2026 cho thấy thêm schema không cải thiện rõ rệt tỷ lệ được AI Overviews trích dẫn (AI engine tự trích xuất được cấu trúc FAQ từ nội dung hiển thị, không bắt buộc cần schema). Ngược lại, dữ liệu công bố đầu 2026 của Otterly.ai lại ghi nhận FAQ có schema tăng tỷ lệ trích dẫn AI đáng kể trong một số trường hợp theo dõi. Vì chi phí thêm schema thấp và không có rủi ro, khuyến nghị: vẫn thêm FAQPage schema ([seo-08](./seo-08-schema-structured-data.md)) như một tín hiệu bổ sung, nhưng không coi đây là yếu tố quyết định. Answer-first và heading hierarchy mới là yếu tố nền tảng.
+
+**Lỗi thường gặp cần tránh**
+- Copy-paste 1 khối FAQ giống hệt nhau qua nhiều trang sản phẩm/bài viết khác nhau: đây là dấu hiệu duplicate content, làm loãng giá trị của FAQ.
+- Không cập nhật FAQ định kỳ: AI Overviews có xu hướng ưu tiên trích nguồn được cập nhật trong khoảng 6 tháng gần nhất, nên refresh FAQ cùng chu kỳ với nội dung chính (mỗi 6–9 tháng, Bước 7).
+- Dùng FAQ để nhồi từ khóa gượng ép thay vì trả lời nhu cầu thật.
+
 ## Quy tắc định dạng bắt buộc: không dùng em dash (—)
 
 **Quy tắc**: toàn bộ bài blog, gồm headline, H1, H2, H3, đoạn mở, thân bài, bullet, bảng và FAQ, không dùng dấu em dash (—) ở bất kỳ vị trí nào. Áp dụng cho mọi bài, không có ngoại lệ.
@@ -167,7 +197,7 @@ Cấu trúc heading này áp dụng như nhau cho mọi giao thức KNXStore đa
 - [ ] Intro theo PPP, có yếu tố "Proof" thật (không bịa)
 - [ ] Mỗi H2/H3 có câu trả lời trực tiếp 40–60 từ ngay bên dưới
 - [ ] Có ít nhất 1 bảng hoặc danh sách có thứ tự cho phần thông tin so sánh/thông số
-- [ ] Có FAQ 3–5 câu cuối bài
+- [ ] FAQ 3–5 câu cuối bài, mỗi câu lấy từ nhu cầu thật, trả lời answer-first 40–60 từ, không trùng nội dung đã có ở H2 phía trên (xem mục Cách viết FAQ cuối bài)
 - [ ] Internal link 2–5 link tới bài pillar/cluster liên quan
 - [ ] Kết luận có hành động cụ thể, không phải tóm tắt chung chung
 - [ ] **Không có ký tự em dash (—) ở bất kỳ đâu trong bài**, kể cả headline, heading và bảng
@@ -190,3 +220,6 @@ Cấu trúc heading này áp dụng như nhau cho mọi giao thức KNXStore đa
 - ConvertMate GEO Benchmark Study 2026 và nghiên cứu GEO-SFE (Yu và cộng sự, 2026): số liệu heading hierarchy và tác động cấu trúc lên trích dẫn AI (nguồn thứ cấp, tham khảo xu hướng)
 - [No, an Em Dash Can't Help You Detect AI Text – How-To Geek](https://www.howtogeek.com/no-an-em-dash-cant-help-you-detect-ai-text/)
 - [Em Dashes, Hyphens and Spotting AI Writing – Plagiarism Today](https://www.plagiarismtoday.com/2025/06/26/em-dashes-hyphens-and-spotting-ai-writing/)
+- [Plain Language Is for Everyone, Even Experts – Nielsen Norman Group](https://www.nngroup.com/articles/plain-language-experts/)
+- [FAQ Page SEO: Examples & Best Practices – SUSO Digital](https://susodigital.com/thoughts/faq-page-seo-examples-best-practices/)
+- Readability, Self-Contained Content Units, và số liệu FAQ schema/AI citation (Otterly.ai): tổng hợp ngành 2026 qua Compose.ly, Wellows (nguồn thứ cấp, tham khảo xu hướng, số liệu giữa các nguồn không đồng nhất nên đã ghi rõ trong bài)
