@@ -21,6 +21,8 @@ Bộ tài liệu tổng hợp kỹ thuật SEO đưa từ khóa lên top kết q
 | [seo-08-schema-structured-data.md](./seo-08-schema-structured-data.md) | JSON-LD, các loại schema hiệu quả, rich results | Cần rich snippet / dữ liệu có cấu trúc |
 | [seo-09-checklist-hanh-dong.md](./seo-09-checklist-hanh-dong.md) | Checklist ưu tiên hành động theo tác động, sai lầm cần tránh | Audit nhanh hoặc onboard người mới |
 | [seo-10-topic-cluster.md](./seo-10-topic-cluster.md) | Mô hình Pillar–Cluster/Content Silo, quy trình xây cụm chủ đề, ví dụ áp dụng cho KNX (B2B) & Matter (B2C) | Lên kế hoạch content theo chủ đề lớn, tránh cannibalization |
+| [seo-11-viet-mo-ta-san-pham.md](./seo-11-viet-mo-ta-san-pham.md) | Kỹ năng viết mô tả sản phẩm chuẩn SEO/GEO (NN/g, Baymard, Shopify, CXL) — cấu trúc, độ dài, checklist | Viết/tối ưu trang sản phẩm |
+| [seo-12-viet-bai-blog-chuan-seo-geo.md](./seo-12-viet-bai-blog-chuan-seo-geo.md) | Kỹ năng viết bài blog chuẩn SEO/GEO (Backlinko, HubSpot, CMU GEO framework) — quy trình 8 bước, checklist trước publish | Viết bài blog mới, brief cho content writer |
 
 ## Nguyên tắc đọc nhanh (rút gọn)
 
