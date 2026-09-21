@@ -6,7 +6,9 @@ source: Nielsen Norman Group, Baymard Institute, Shopify, MarTech, CXL, Copyblog
 
 # Kỹ năng viết mô tả sản phẩm chuẩn SEO/GEO
 
-← [Về chỉ mục](./seo-00-index.md) · Liên quan: [seo-02-onpage-content](./seo-02-onpage-content.md), [seo-08-schema-structured-data](./seo-08-schema-structured-data.md)
+← [Về chỉ mục](./seo-00-index.md) · Liên quan: [seo-02-onpage-content](./seo-02-onpage-content.md), [seo-06-keyword-research](./seo-06-keyword-research.md), [seo-08-schema-structured-data](./seo-08-schema-structured-data.md)
+
+> **Đầu vào cần có trước khi dùng file này**: (1) từ khóa chính đã xác thực nhu cầu tìm kiếm thật ([seo-06](./seo-06-keyword-research.md)), (2) dữ liệu sản phẩm thật (thông số, tương thích, giá, hình ảnh) từ nhà cung cấp hoặc `data_base/`, (3) giọng thương hiệu đã chọn (`knx-brand-voice-b2b` hoặc `knx-brand-voice-b2c`). File này chỉ hướng dẫn cách viết, không thay thế bước nghiên cứu từ khóa hay thu thập dữ liệu sản phẩm. Nếu dữ liệu đầu vào thiếu 1 trường (VD: không có thông tin bảo hành hoặc case study thật), không tự suy diễn hay bịa số liệu: bỏ qua phần đó hoặc đánh dấu rõ để người kiểm duyệt bổ sung trước khi publish.
 
 ## 1. Vì sao mô tả sản phẩm quan trọng hơn nhiều người nghĩ
 

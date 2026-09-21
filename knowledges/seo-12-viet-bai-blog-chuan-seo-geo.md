@@ -6,7 +6,9 @@ source: Backlinko, HubSpot, CMU GEO framework, ngành SEO 2026, Conductor Academ
 
 # Kỹ năng viết bài blog chuẩn SEO/GEO
 
-← [Về chỉ mục](./seo-00-index.md) · Liên quan: [seo-02-onpage-content](./seo-02-onpage-content.md), [seo-07-geo-aeo-ai-search](./seo-07-geo-aeo-ai-search.md), [seo-10-topic-cluster](./seo-10-topic-cluster.md)
+← [Về chỉ mục](./seo-00-index.md) · Liên quan: [seo-02-onpage-content](./seo-02-onpage-content.md), [seo-06-keyword-research](./seo-06-keyword-research.md), [seo-07-geo-aeo-ai-search](./seo-07-geo-aeo-ai-search.md), [seo-10-topic-cluster](./seo-10-topic-cluster.md)
+
+> **Đầu vào cần có trước khi dùng file này**: (1) từ khóa chính và intent đã xác thực nhu cầu tìm kiếm thật ([seo-06](./seo-06-keyword-research.md)), (2) dữ liệu/sự kiện thật để viết phần "Proof" và thân bài (số dự án, kinh nghiệm kỹ sư, thông số sản phẩm từ `data_base/`), (3) giọng thương hiệu đã chọn (`knx-brand-voice-b2b` cho bài KNX/Modbus/BACnet, `knx-brand-voice-b2c` cho bài Matter). File này chỉ hướng dẫn cách viết, không thay thế bước nghiên cứu từ khóa hay thu thập dữ liệu. Nếu dữ liệu đầu vào thiếu 1 phần (VD: không có case study thật, không có số liệu kiểm chứng), không tự bịa: bỏ qua hoặc đánh dấu rõ để người kiểm duyệt bổ sung trước khi publish.
 
 ## Nguyên tắc cốt lõi
 
