@@ -29,6 +29,7 @@ source: Google Search Central, Moz, Backlinko
   - Featured snippets
   - AI Overviews / GEO (xem [file 07](./seo-07-geo-aeo-ai-search.md))
   - Thời gian đọc, khả năng scan nội dung
+- Hướng dẫn chi tiết cách viết H1/H2/H3 khớp search intent theo từng loại trang: [seo-11 mục 4](./seo-11-viet-mo-ta-san-pham.md) (trang sản phẩm), [seo-12](./seo-12-viet-bai-blog-chuan-seo-geo.md) (bài blog, theo từng loại intent: informational/how-to/so sánh/list)
 
 ## 4. Từ khóa trong nội dung — làm đúng, tránh sai
 
