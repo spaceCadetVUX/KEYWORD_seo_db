@@ -1,14 +1,3 @@
----
-title: "Bảng Điều Khiển Matter Daikin Cổng P1/P2 - 81MTAC01-DAI"
-meta_description: "Biến điều hòa Daikin cổng P1/P2 thành thiết bị Matter thông minh với 81MTAC01-DAI. Điều khiển bằng app và giọng nói, không cần đi dây mới. Tư vấn miễn phí."
-target_keyword: "bảng điều khiển matter daikin cổng p1/p2"
-content_type: san-pham
-schema_suggested: Product, FAQPage
-status: draft
-created: 2026-09-21
-url_hien_tai: "https://knxstore.vn/products/bang-dieu-khien-thermostat-matter-daikin-cong-p1p2-81mtac01daib"
----
-
 # Bảng Điều Khiển Matter Daikin Cổng P1/P2 - 81MTAC01-DAI (MicroAir)
 
 81MTAC01-DAI biến bảng điều khiển có dây của điều hòa Daikin thành thiết bị Matter thông minh, điều khiển được nhiệt độ, quạt và chế độ vận hành từ Apple Home, Google Home, Amazon Alexa hoặc Samsung SmartThings. Sản phẩm kết nối qua cổng P1/P2 có sẵn trên điều hòa nên không cần đục tường hay đi dây mới, và vì giao tiếp hai chiều thay vì hồng ngoại, app luôn nhận đúng trạng thái máy đang chạy thật.
@@ -89,12 +78,3 @@ Sản phẩm bảo hành theo chính sách KNXStore. Nếu bạn không chắc c
 
 Hotline: 0918.918.755
 Email: sales@knxstore.vn
-
----
-
-## Ghi chú nội bộ (không thuộc nội dung bài, chỉ để tham khảo khi publish)
-
-- Chưa thêm Certificate ID Matter, Adaptive Temperature, và bảng so sánh Matter vs Gerlsair vì chưa có số liệu xác thực từ MicroAir, tránh claim sai. Bổ sung khi có dữ liệu chính thức.
-- Cụm từ khóa "cổng P1/P2 daikin là gì" và "biến điều hòa Daikin thành điều hòa thông minh" là giả thuyết long-tail từ phân tích khoảng trống từ khóa (`phan-tich-yeu-cau-daikin/03-khoang-trong-va-co-hoi-tu-khoa.md`), chưa xác thực volume thật bằng Keyword MCP.
-- Giữ nguyên URL slug hiện tại, chỉ thay nội dung H1/description/meta.
-- Chưa lưu được vào CMS qua MCP `cacylinen` do kết nối đang ở trạng thái unauthenticated. Cần đăng nhập lại kết nối đó (qua `/mcp` hoặc màn hình connector), sau đó đọc `get_product_context` để đối chiếu field thật trước khi `save_product` với `dry_run: true` để preview.

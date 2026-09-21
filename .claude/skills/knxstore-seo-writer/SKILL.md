@@ -36,27 +36,30 @@ Làm theo file seo-11 hoặc seo-12 (đã đọc ở Bước 0) cho phần cấu
 
 Trước khi đưa bản nháp cho người dùng, chủ động rà lại toàn bộ text vừa viết xem còn ký tự "—" nào sót không (có thể lướt qua bằng mắt hoặc tìm kiếm ký tự này trong bản nháp), coi đây là bước bắt buộc giống như đọc lại chính tả.
 
-## Bước 3: Lưu bản nháp thành file .md trong output/
+## Bước 3: Lưu file .md chỉ chứa đúng nội dung sẽ dán vào bài
 
-Đầu ra của skill này là 1 file thật, không phải chỉ trả text trong chat. Đóng gói bản nháp theo khung sau (frontmatter + nội dung), rồi dùng Write để lưu vào thư mục `output/` của repo:
+File lưu ra phải là bản sẵn sàng dùng ngay: mở file ra là copy nguyên xi dán vào ô nội dung bài viết/trang sản phẩm trên CMS, không cần cắt gọt gì thêm. Vì vậy file **không chứa frontmatter YAML, không chứa ghi chú nội bộ, không chứa nhãn quy trình (như "BLOCK 1", "Bước 2"...) xen vào giữa** — chỉ có đúng phần nội dung, bắt đầu ngay từ H1:
 
 ```markdown
----
-title: "[Title tag đề xuất, ~50-60 ký tự]"
-meta_description: "[Meta description đề xuất, ~150-160 ký tự]"
-target_keyword: "[từ khóa chính]"
-content_type: san-pham | blog
-schema_suggested: [Product / FAQPage / Product, FAQPage]
-status: draft
-created: [ngày hôm nay, định dạng YYYY-MM-DD]
----
-
 # [H1]
 
 [Toàn bộ thân bài theo cấu trúc đã chọn ở seo-11 hoặc seo-12, đúng heading hierarchy]
 
 ## Câu hỏi thường gặp
 [3-5 cặp H3 hỏi-đáp]
+```
+
+Nếu 1 chỗ dữ liệu bị thiếu và đã đánh dấu `[CẦN BỔ SUNG: ...]` theo Bước 1, giữ nguyên đánh dấu đó ngay trong file (người biên tập cần thấy khi đọc bài trước khi publish), không xóa đi để file trông "sạch" hơn.
+
+**Title tag, Meta description, từ khóa chính, và gợi ý schema KHÔNG đưa vào file này** — chúng thuộc các field SEO riêng của CMS, dán nhầm vào ô nội dung sẽ hiện sai trên trang. Báo các thông tin đó ngay trong câu trả lời ở chat, ngay sau khi lưu file xong, theo mẫu:
+
+```
+Đã lưu: output/<tên-file>.md
+
+Title tag (~50-60 ký tự): ...
+Meta description (~150-160 ký tự): ...
+Schema gợi ý: [Product / FAQPage / cả hai], ghi chú ngắn các trường cần điền
+[Nếu có phần đánh dấu CẦN BỔ SUNG trong file, liệt kê lại ngắn gọn ở đây]
 ```
 
 **Đặt tên file:**
@@ -76,8 +79,9 @@ Trước khi báo hoàn thành, đối chiếu bản nháp vừa lưu với chec
 - [ ] Không có số liệu/case study bị bịa để lấp chỗ dữ liệu thiếu, những chỗ thiếu đã được đánh dấu rõ
 - [ ] Giọng văn khớp B2B hoặc B2C đã xác định ở Bước 1
 - [ ] Đã lưu đúng file trong `output/`, không ghi đè bản cũ mà chưa hỏi
+- [ ] File chỉ chứa nội dung bài (từ H1 trở xuống), không có frontmatter YAML, không có ghi chú nội bộ hay nhãn quy trình lẫn vào giữa
 
-Nếu có mục nào không đạt, sửa file rồi lưu lại trước khi báo xong. Sau khi mọi mục đạt, trả lời ngắn gọn trong chat: đường dẫn file vừa lưu và tóm tắt các chỗ đã đánh dấu `[CẦN BỔ SUNG]` nếu có, không cần dán lại toàn bộ nội dung bài viết vì đã có trong file.
+Nếu có mục nào không đạt, sửa file rồi lưu lại trước khi báo xong. Sau khi mọi mục đạt, trả lời ngắn gọn trong chat theo đúng mẫu ở Bước 3 (đường dẫn file, Title tag, Meta description, schema gợi ý), không cần dán lại toàn bộ nội dung bài viết vì đã có trong file.
 
 ## Tài liệu tham chiếu
 
