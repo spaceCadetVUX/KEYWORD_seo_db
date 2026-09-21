@@ -110,6 +110,7 @@ Bài blog phục vụ nhiều loại intent hơn trang sản phẩm (information
 - Mỗi H2/H3 dạng câu hỏi cần **câu trả lời trực tiếp 40–60 từ ngay bên dưới** (answer-first, đã nêu ở phần GEO trong Bước 7), heading đúng định dạng nhưng không có answer-first phía dưới vẫn mất phần lớn giá trị GEO.
 - Từ khóa qua các heading dùng biến thể ngữ nghĩa, tránh lặp cụm từ khóa chính y hệt ở nhiều H2 liên tiếp, đây là dấu hiệu over-optimization ([seo-02 mục 4](./seo-02-onpage-content.md)).
 - Cấu trúc heading tác động độc lập với chất lượng nội dung: nghiên cứu GEO-SFE (Yu và cộng sự, 2026) giữ nguyên nội dung, chỉ thay đổi cấu trúc heading và định dạng, đo được mức tăng **17.3% tỷ lệ trích dẫn** trên 6 answer engine khác nhau. Khoảng **87% trang được AI trích dẫn chỉ dùng đúng 1 H1**, và trang có hierarchy chuẩn có xác suất được trích dẫn cao gấp khoảng **2.8 lần** trang không có cấu trúc rõ (tổng hợp ngành 2026: Seer Interactive, BrightEdge, ConvertMate GEO Benchmark, dùng để tham khảo xu hướng, không phải số liệu chính thức từ Google).
+- **Phân biệt mức độ chắc chắn cho Google AI Overviews**: các số liệu trên đo gộp trên nhiều AI answer engine (ChatGPT, Perplexity, Gemini...), chưa tách riêng cho AI Overviews của Google. Nguyên tắc heading hierarchy và answer-first vẫn áp dụng tốt cho AI Overviews cụ thể, vì cơ chế này dùng chung pipeline trích đoạn với featured snippet truyền thống của Google ([seo-07 mục 3](./seo-07-geo-aeo-ai-search.md)), đã được xác nhận độc lập trước khi có khái niệm GEO. Riêng FAQ section (Bước 7): lợi ích rõ hơn cho ChatGPT/Perplexity (theo CMU GEO study benchmark đa engine) so với AI Overviews, vì Google đã bỏ FAQ rich result từ 2023.
 
 **Cách viết H2/H3 theo từng loại intent (khớp bảng template ở Bước 2):**
 
@@ -120,7 +121,7 @@ Bài blog phục vụ nhiều loại intent hơn trang sản phẩm (information
 | So sánh | Đang cân nhắc giữa các lựa chọn | Mỗi H2 = 1 tiêu chí so sánh (giá, hiệu năng, độ ổn định...) + 1 H2 cuối "Nên chọn X hay Y cho [use case]" | Chi tiết từng tiêu chí theo từng sản phẩm/giải pháp |
 | List post | Muốn xem nhiều lựa chọn/mẹo | Mỗi H2 = 1 item trong danh sách, giữ format nhất quán (giúp Google trích đoạn dạng list snippet) | Chi tiết bổ sung cho từng item nếu cần |
 
-**Ví dụ áp dụng (bài how-to KNX):**
+**Ví dụ áp dụng (bài how-to KNX/Daikin, B2B):**
 - H1: "Cách kết nối Daikin với Google Home qua Aidoo"
 - H2: "Bước 1: Kiểm tra máy Daikin có cổng P1/P2 không"
 - H2: "Bước 2: Lắp Aidoo Controller vào cổng P1/P2"
@@ -128,11 +129,21 @@ Bài blog phục vụ nhiều loại intent hơn trang sản phẩm (information
 - H2: "Bước 3: Kết nối Aidoo với Google Home qua app"
 - H2: "Câu hỏi thường gặp" (FAQ, xem phần GEO, Bước 7)
 
+**Ví dụ áp dụng (bài how-to Matter, B2C, cùng cấu trúc, khác sản phẩm):**
+- H1: "Cách kết nối công tắc Matter với Apple Home"
+- H2: "Bước 1: Kiểm tra công tắc có mã QR Matter không"
+- H2: "Bước 2: Thêm công tắc vào app Apple Home"
+  - H3: "Lỗi thường gặp: mã QR không quét được"
+- H2: "Bước 3: Đặt tên và gán phòng cho công tắc"
+- H2: "Câu hỏi thường gặp" (FAQ, xem phần GEO, Bước 7)
+
+Cấu trúc heading này áp dụng như nhau cho mọi giao thức KNXStore đang phân phối (KNX, DALI-2, Casambi, BACnet, Modbus, Matter), chỉ thay đổi nội dung kỹ thuật cụ thể theo từng dòng sản phẩm.
+
 ## Quy tắc định dạng bắt buộc: không dùng em dash (—)
 
 **Quy tắc**: toàn bộ bài blog, gồm headline, H1, H2, H3, đoạn mở, thân bài, bullet, bảng và FAQ, không dùng dấu em dash (—) ở bất kỳ vị trí nào. Áp dụng cho mọi bài, không có ngoại lệ.
 
-**Vì sao có quy tắc này**: các mô hình AI tạo văn bản (ChatGPT, Claude, Gemini) dùng em dash nhiều hơn hẳn mức người viết thông thường sử dụng, nên với độc giả quen mắt, một bài có em dash dày đặc dễ đọc như nội dung sinh hàng loạt bằng máy. Cần nói rõ để tránh hiểu nhầm: theo các bài phân tích AI-detection 2025-2026 (How-To Geek, Plagiarism Today), bản thân dấu em dash **không phải tín hiệu đáng tin cậy** để các công cụ phát hiện AI như GPTZero, Originality hay Copyleaks chấm điểm, vì các công cụ này đo độ bất ngờ thống kê của câu chữ chứ không đếm dấu câu. Nói cách khác, bỏ em dash không giúp "qua mặt" công cụ phát hiện AI, nhưng có tác động thật đến cảm nhận của người đọc rằng bài do con người viết chứ không phải sinh hàng loạt, đúng tinh thần "Experience" trong E-E-A-T ([seo-04](./seo-04-eeat-content-quality.md)) mà KNXStore theo đuổi. Đây là quy tắc giọng văn thương hiệu riêng của KNXStore, áp dụng song song với các tiêu chí SEO/GEO khác chứ không thay thế chúng.
+**Vì sao có quy tắc này**: các mô hình AI tạo văn bản (ChatGPT, Claude, Gemini) dùng em dash nhiều hơn hẳn mức người viết thông thường sử dụng, nên với độc giả quen mắt, một bài có em dash dày đặc dễ đọc như nội dung sinh hàng loạt bằng máy. Cần nói rõ để tránh hiểu nhầm: theo các bài phân tích AI-detection 2025-2026 (How-To Geek, Plagiarism Today), bản thân dấu em dash **không phải tín hiệu đáng tin cậy** để các công cụ phát hiện AI như GPTZero, Originality hay Copyleaks chấm điểm, vì các công cụ này đo độ bất ngờ thống kê của câu chữ chứ không đếm dấu câu. Nói cách khác, bỏ em dash không giúp "qua mặt" công cụ phát hiện AI, nhưng có tác động thật đến cảm nhận của người đọc rằng bài do con người viết chứ không phải sinh hàng loạt, đúng tinh thần "Experience" trong E-E-A-T ([seo-04](./seo-04-eeat-content-quality.md)) mà KNXStore theo đuổi. Đây là quy tắc giọng văn thương hiệu riêng của KNXStore, áp dụng song song với các tiêu chí SEO/GEO khác chứ không thay thế chúng. Cần nói rõ: quy tắc này **không ảnh hưởng thứ hạng SEO hay khả năng được Google AI Overviews trích dẫn**, tác động duy nhất là cảm nhận đọc của con người, khác hẳn với heading hierarchy hay answer-first ở mục Heading phía trên (những yếu tố có tác động trực tiếp đến AI Overviews).
 
 **Cách thay thế theo từng trường hợp:**
 

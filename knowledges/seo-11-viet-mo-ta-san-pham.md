@@ -56,10 +56,13 @@ Trang sản phẩm gần như luôn phục vụ **intent transactional/commercia
 - H1 nên súc tích, áp dụng cùng ngưỡng độ dài với title tag: **~50–60 ký tự** ([seo-02 mục 1](./seo-02-onpage-content.md)), trừ khi tên model kỹ thuật buộc phải dài hơn để giữ đúng chính tả theo nhà sản xuất.
 - Từ khóa qua các heading nên là **biến thể ngữ nghĩa**, không lặp y hệt cụm từ khóa chính ở mọi heading, đây là dấu hiệu over-optimization ([seo-02 mục 4](./seo-02-onpage-content.md)).
 - Trang có heading hierarchy chuẩn H1 → H2 → H3 có khả năng được AI answer engine trích dẫn cao hơn hẳn trang cấu trúc heading lộn xộn. Theo tổng hợp ngành 2026 (Seer Interactive, BrightEdge, ConvertMate GEO Benchmark): khoảng **87% trang được AI trích dẫn chỉ dùng đúng 1 H1**, và trang có hierarchy chuẩn có xác suất được trích dẫn cao gấp khoảng **2.8 lần** trang không có cấu trúc rõ ràng. Đây là số liệu tổng hợp từ các nguồn thứ cấp 2026, dùng để tham khảo xu hướng, không phải số liệu chính thức từ Google.
+- **Phân biệt mức độ chắc chắn cho Google AI Overviews**: số liệu 87%/2.8 lần ở trên đo gộp trên nhiều AI answer engine (ChatGPT, Perplexity, Gemini...), chưa có số liệu tách riêng cho AI Overviews của Google. Tuy vậy nguyên tắc heading hierarchy vẫn áp dụng tốt cho AI Overviews cụ thể, vì cơ chế này dùng chung pipeline trích đoạn với featured snippet truyền thống của Google ([seo-07 mục 3](./seo-07-geo-aeo-ai-search.md)), đã được xác nhận độc lập trước khi có khái niệm GEO.
 
 **H1: xác nhận đúng sản phẩm khách đang tìm**
 - Công thức: `[Tên sản phẩm] + [lợi ích/use-case chính]`, không chỉ mã SKU trơ.
-- VD: "Aidoo Controller: điều khiển điều hòa Daikin qua KNX" tốt hơn "AIDOO-KNX-1".
+- VD (B2B): "Aidoo Controller: điều khiển điều hòa Daikin qua KNX" tốt hơn "AIDOO-KNX-1".
+- VD (B2C): "Công tắc Matter: bật tắt đèn bằng Apple Home, Google Home, Alexa" tốt hơn "MTR-SW-01".
+- Công thức áp dụng như nhau cho mọi dòng sản phẩm KNXStore đang phân phối, không riêng Daikin/Aidoo: DALI-2, Casambi, BACnet, Modbus, Matter đều dùng chung 1 công thức H1.
 
 **H2: chia theo từng cụm intent phụ trong hành trình mua:**
 
@@ -73,7 +76,7 @@ Trang sản phẩm gần như luôn phục vụ **intent transactional/commercia
 
 Mỗi H2 nên ngắn gọn, đủ để người đọc quét hiểu ngay nội dung section, tránh H2 dài tràn quá 1 dòng trên màn hình mobile.
 
-**H3: tách nhỏ trong từng H2.** Mỗi biến thể, mỗi câu FAQ, mỗi nhóm thông số dùng 1 H3 riêng (VD: "Aidoo Basic vs Aidoo Advance" đặt dưới H2 "Khả năng tương thích"). H3 là cấp AI answer engine thường trích dẫn trực tiếp vì đoạn trả lời ngắn, tự thân đủ nghĩa, đúng nguyên tắc GEO ([seo-07](./seo-07-geo-aeo-ai-search.md)).
+**H3: tách nhỏ trong từng H2.** Mỗi biến thể, mỗi câu FAQ, mỗi nhóm thông số dùng 1 H3 riêng, VD: "Aidoo Basic vs Aidoo Advance", "Gateway Modbus TCP vs Modbus RTU", hay "Công tắc Matter 1 kênh vs 2 kênh", đặt dưới H2 "Khả năng tương thích". H3 là cấp AI answer engine thường trích dẫn trực tiếp vì đoạn trả lời ngắn, tự thân đủ nghĩa, đúng nguyên tắc GEO ([seo-07](./seo-07-geo-aeo-ai-search.md)).
 
 ## 5. Nguyên tắc viết câu: từ nghiên cứu ngôn ngữ và copywriting
 
@@ -88,7 +91,7 @@ Mỗi H2 nên ngắn gọn, đủ để người đọc quét hiểu ngay nội 
 
 **Quy tắc**: toàn bộ nội dung mô tả sản phẩm, gồm H1, H2, H3, đoạn thân bài, bullet và caption ảnh, không dùng dấu em dash (—) ở bất kỳ vị trí nào. Áp dụng cho mọi bài, không có ngoại lệ.
 
-**Vì sao có quy tắc này**: các mô hình AI tạo văn bản (ChatGPT, Claude, Gemini) dùng em dash nhiều hơn hẳn mức người viết thông thường sử dụng, nên với độc giả quen mắt, một bài có em dash dày đặc dễ đọc như nội dung sinh hàng loạt bằng máy. Cần nói rõ để tránh hiểu nhầm: theo các bài phân tích AI-detection 2025-2026 (How-To Geek, Plagiarism Today), bản thân dấu em dash **không phải tín hiệu đáng tin cậy** để các công cụ phát hiện AI như GPTZero, Originality hay Copyleaks chấm điểm, vì các công cụ này đo độ bất ngờ thống kê của câu chữ chứ không đếm dấu câu. Nói cách khác, bỏ em dash không giúp "qua mặt" công cụ phát hiện AI, nhưng có tác động thật đến cảm nhận của người đọc rằng nội dung do con người viết chứ không phải sinh hàng loạt, đúng tinh thần "Experience" trong E-E-A-T ([seo-04](./seo-04-eeat-content-quality.md)) mà KNXStore theo đuổi. Đây là quy tắc giọng văn thương hiệu riêng của KNXStore, áp dụng song song với các tiêu chí SEO/GEO khác chứ không thay thế chúng.
+**Vì sao có quy tắc này**: các mô hình AI tạo văn bản (ChatGPT, Claude, Gemini) dùng em dash nhiều hơn hẳn mức người viết thông thường sử dụng, nên với độc giả quen mắt, một bài có em dash dày đặc dễ đọc như nội dung sinh hàng loạt bằng máy. Cần nói rõ để tránh hiểu nhầm: theo các bài phân tích AI-detection 2025-2026 (How-To Geek, Plagiarism Today), bản thân dấu em dash **không phải tín hiệu đáng tin cậy** để các công cụ phát hiện AI như GPTZero, Originality hay Copyleaks chấm điểm, vì các công cụ này đo độ bất ngờ thống kê của câu chữ chứ không đếm dấu câu. Nói cách khác, bỏ em dash không giúp "qua mặt" công cụ phát hiện AI, nhưng có tác động thật đến cảm nhận của người đọc rằng nội dung do con người viết chứ không phải sinh hàng loạt, đúng tinh thần "Experience" trong E-E-A-T ([seo-04](./seo-04-eeat-content-quality.md)) mà KNXStore theo đuổi. Đây là quy tắc giọng văn thương hiệu riêng của KNXStore, áp dụng song song với các tiêu chí SEO/GEO khác chứ không thay thế chúng. Cần nói rõ: quy tắc này **không ảnh hưởng thứ hạng SEO hay khả năng được Google AI Overviews trích dẫn**, tác động duy nhất là cảm nhận đọc của con người, khác hẳn với heading hierarchy hay answer-first ở mục 4 (những yếu tố có tác động trực tiếp đến AI Overviews).
 
 **Cách thay thế theo từng trường hợp:**
 
